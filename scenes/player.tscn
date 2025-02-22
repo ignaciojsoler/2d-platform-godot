@@ -222,8 +222,8 @@ animation = &"jump"
 
 [node name="CoinSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_cpf10")
-volume_db = -16.0
+bus = &"SFX"
 
 [node name="JumpAudio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_0nuye")
-volume_db = -16.0
+bus = &"SFX"
