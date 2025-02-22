@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://pf0rfsq4s1sv"]
+
+[ext_resource type="Script" path="res://scenes/gui.gd" id="1_2qlkj"]
+[ext_resource type="FontFile" uid="uid://dt3fivgx42att" path="res://assets/fonts/PixelOperator8.ttf" id="1_ngsc6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_r0b5c"]
+font = ExtResource("1_ngsc6")
+font_size = 8
+
+[node name="GUI" type="CanvasLayer"]
+script = ExtResource("1_2qlkj")
+
+[node name="Score" type="Label" parent="."]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 52.0
+offset_bottom = 31.0
+text = "Score: "
+label_settings = SubResource("LabelSettings_r0b5c")
