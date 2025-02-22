@@ -1,0 +1,261 @@
+[gd_scene load_steps=10 format=4 uid="uid://t63tgosffyry"]
+
+[ext_resource type="PackedScene" uid="uid://dyg7bytqloitl" path="res://scenes/player.tscn" id="1_74y2q"]
+[ext_resource type="Texture2D" uid="uid://d2in8jdl82hm2" path="res://assets/sprites/world_tileset.png" id="2_iw60n"]
+[ext_resource type="PackedScene" uid="uid://cyuywwd33f5rx" path="res://scenes/platform.tscn" id="3_4yk5g"]
+[ext_resource type="PackedScene" uid="uid://b1b556by67cy6" path="res://scenes/coin.tscn" id="4_5ss3x"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oigfw"]
+texture = ExtResource("2_iw60n")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:0/0 = 0
+9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -6.25, 8, 0.5, -8, -1.375)
+10:0/0 = 0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6.125, 8, -6, 8, 1, -8, 1.125)
+11:0/0 = 0
+11:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6.875, 8, -8, 8, -1.375, -8, 0)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:1/0 = 0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -6.25, 8, 0.5, -8, -1.375)
+10:1/0 = 0
+10:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6.125, 8, -6, 8, 1, -8, 1.125)
+11:1/0 = 0
+11:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6.875, 8, -8, 8, -1.375, -8, 0)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:2/0 = 0
+9:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -6.25, 8, 0.5, -8, -1.375)
+10:2/0 = 0
+10:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6.125, 8, -6, 8, 1, -8, 1.125)
+11:2/0 = 0
+11:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6.875, 8, -8, 8, -1.375, -8, 0)
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+1:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+6:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+2:4/size_in_atlas = Vector2i(3, 3)
+2:4/0 = 0
+3:7/0 = 0
+3:8/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_n5vy7"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_oigfw")
+
+[sub_resource type="Animation" id="Animation_e3koy"]
+resource_name = "move"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Platform2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(529, 133), Vector2(688, 133)]
+}
+
+[sub_resource type="Animation" id="Animation_gtnxx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Platform2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(529, 133)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_il86c"]
+_data = {
+"RESET": SubResource("Animation_gtnxx"),
+"move": SubResource("Animation_e3koy")
+}
+
+[node name="Game" type="Node"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAHAAgAAAAAAAAAAAAIAAgAAAAAAAAAAAAJAAgAAAAAAAAAAAAKAAgAAAAAAAAAAAALAAgAAAAAAAAAAAAMAAgAAAAAAAAAAAAGAAgAAAAAAAAAAAANAAgAAAAJAAAAAAAOAAgAAAAKAAAAAAAPAAgAAAALAAAAAAAQAAgAAAAAAAAAAAARAAgAAAAAAAAAAAASAAgAAAAAAAAAAAAGAAkAAAAAAAEAAAAHAAkAAAAAAAEAAAAIAAkAAAAAAAEAAAAJAAkAAAABAAEAAAAKAAkAAAAAAAEAAAALAAkAAAAAAAEAAAAMAAkAAAAAAAEAAAALAAoAAAABAAAAAAAKAAoAAAAAAAEAAAAJAAoAAAAAAAEAAAAIAAoAAAAAAAEAAAAHAAoAAAAAAAEAAAARAAkAAAAAAAEAAAASAAkAAAAAAAEAAAATAAkAAAABAAAAAAATAAgAAAAAAAAAAAAUAAgAAAAAAAAAAAAVAAgAAAAJAAAAAAAWAAgAAAAKAAAAAAAXAAgAAAAKAAAAAAAYAAgAAAAKAAAAAAAZAAgAAAALAAAAAAAaAAgAAAAGAAAAAAAbAAgAAAAGAAAAAAAcAAgAAAAGAAAAAAAdAAgAAAAGAAAAAAAeAAgAAAAGAAAAAAAfAAgAAAAGAAAAAAAaAAkAAAAGAAEAAAAbAAkAAAAGAAEAAAAcAAkAAAAIAAEAAAAdAAkAAAAGAAEAAAAeAAkAAAAGAAEAAAAfAAkAAAAGAAEAAAAbAAoAAAAGAAEAAAAcAAoAAAAGAAEAAAAdAAoAAAAGAAEAAAAeAAoAAAAGAAEAAAARAAoAAAAAAAEAAAASAAoAAAAAAAEAAAATAAoAAAAAAAEAAAAUAAkAAAAAAAEAAAAQAAkAAAAAAAEAAAARAAYAAAADAAcAAAARAAcAAAADAAgAAAARAAUAAAADAAcAAAARAAMAAAACAAQAAAAHAAMAAAACAAQAAAAHAAYAAAADAAcAAAAHAAcAAAADAAgAAAAHAAUAAAADAAcAAAATAAcAAAABAAQAAAALAAcAAAABAAQAAAAJAAcAAAABAAQAAAANAAMAAAAAAAAAAAAOAAMAAAAAAAAAAAAPAAMAAAAAAAAAAAAsAAgAAAAGAAAAAAAsAAkAAAAGAAEAAAAtAAgAAAAGAAAAAAAtAAkAAAAGAAEAAAAtAAoAAAAGAAEAAAAuAAgAAAAGAAAAAAAuAAkAAAAIAAEAAAAuAAoAAAAGAAEAAAAvAAgAAAAGAAAAAAAvAAkAAAAGAAEAAAAvAAoAAAAGAAEAAAAwAAgAAAAGAAAAAAAwAAkAAAAGAAEAAAAwAAoAAAAGAAEAAAAxAAgAAAAGAAAAAAAxAAkAAAAGAAEAAAA=")
+tile_set = SubResource("TileSet_n5vy7")
+
+[node name="Player" parent="." instance=ExtResource("1_74y2q")]
+z_index = 50
+position = Vector2(128, 128)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(8, -8)
+position_smoothing_enabled = true
+
+[node name="Platform2" parent="." instance=ExtResource("3_4yk5g")]
+position = Vector2(529, 133)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Platform2"]
+root_node = NodePath("../../Platform")
+libraries = {
+"": SubResource("AnimationLibrary_il86c")
+}
+autoplay = "move"
+
+[node name="Platform" parent="." instance=ExtResource("3_4yk5g")]
+position = Vector2(176, 88)
+
+[node name="Coins" type="Node" parent="."]
+
+[node name="Coin3" parent="Coins" instance=ExtResource("4_5ss3x")]
+position = Vector2(592, 120)
+
+[node name="Coin4" parent="Coins" instance=ExtResource("4_5ss3x")]
+position = Vector2(624, 120)
+
+[node name="Coin5" parent="Coins" instance=ExtResource("4_5ss3x")]
+position = Vector2(608, 120)
+
+[node name="Coin2" parent="Coins" instance=ExtResource("4_5ss3x")]
+position = Vector2(224, 40)
+
+[node name="Coin7" parent="Coins" instance=ExtResource("4_5ss3x")]
+position = Vector2(376, 120)
+
+[node name="Coin8" parent="Coins" instance=ExtResource("4_5ss3x")]
+position = Vector2(392, 120)
+
+[node name="Coin6" parent="Coins" instance=ExtResource("4_5ss3x")]
+position = Vector2(360, 120)
+
+[node name="Coin" parent="Coins" instance=ExtResource("4_5ss3x")]
+position = Vector2(240, 40)
