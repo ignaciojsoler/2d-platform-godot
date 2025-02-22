@@ -219,6 +219,7 @@ position = Vector2(128, 128)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(8, -8)
+limit_bottom = 216
 position_smoothing_enabled = true
 
 [node name="Platform2" parent="." instance=ExtResource("3_4yk5g")]
